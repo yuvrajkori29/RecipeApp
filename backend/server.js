@@ -15,8 +15,8 @@ app.use(cors());
 app.use('/auth',userRouter);
 app.use('/recipes',recipeRouter);
 
-
-mongoose.connect('mongodb+srv://yuvrajkori29:8D15b8HWVWIJ9sVN@receipe.vrm8trk.mongodb.net/?retryWrites=true&w=majority',
+//enter your usenamepassword in this
+mongoose.connect('mongodb+srv://{username,password}@receipe.vrm8trk.mongodb.net/?retryWrites=true&w=majority',
 {
     useNewUrlParser : true,
     useUnifiedTopology:true,

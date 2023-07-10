@@ -4,11 +4,11 @@ import { Link, useNavigate } from 'react-router-dom';
 
 function Navbar() {
   const [cookies, setCookie] = useCookies(['access_token']);
-  console.log(cookies.access_token);
+  console.log(cookies?.access_token);
   const navigate = useNavigate();
 
   const logout = () => {
-    setCookie('access_token', '');
+    setCookie('access_token', '', { expires: new Date(0) });
     window.localStorage.removeItem('userID');
     navigate('/auth');
   };

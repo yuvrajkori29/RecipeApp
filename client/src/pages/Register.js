@@ -21,7 +21,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate()
 
-  const [_,setCookie] = useCookies(['access_token']);
+  const [,setCookie] = useCookies(['access_token']);
 
   const onSubmit = async (e) => {
     

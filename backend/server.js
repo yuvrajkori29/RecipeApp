@@ -16,7 +16,7 @@ app.use('/auth',userRouter);
 app.use('/recipes',recipeRouter);
 
 //enter your usenamepassword in this
-mongoose.connect('mongodb+srv://{username,password}@receipe.vrm8trk.mongodb.net/?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://<username><password>@receipe.vrm8trk.mongodb.net/?retryWrites=true&w=majority',
 {
     useNewUrlParser : true,
     useUnifiedTopology:true,

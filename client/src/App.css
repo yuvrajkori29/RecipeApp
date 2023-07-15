@@ -212,3 +212,71 @@ button {
 button:hover {
   transform: scale(1.1);
 }
+
+
+
+/* login and create user */
+
+
+.box-1 {
+  max-width: 400px;
+  margin: 0 auto;
+ 
+}
+
+.box-1 h1 {
+  text-align: center;
+}
+
+.box-1 form {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+
+
+.box-1 label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.box-1 input,
+.box-1 textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.box-1 button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+
+}
+
+.box-1 button:hover {
+  background-color: #45a049;
+}
+
+.box-1 input[type="text"],
+.box-1 textarea,
+.box-1 button[type="submit"] {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box-1 input[type="text"]:focus,
+.box-1 textarea:focus,
+.box-1 button[type="submit"]:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+

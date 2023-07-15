@@ -27,12 +27,20 @@ body{
 
  .container-home .recipe-container{
 
-display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 4rem;
-  grid-row-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center; /* Center the cards horizontally */
+  align-items: center; /* Center the cards vertically */
+  text-align: center;
 
 } 
+
+@media screen and (max-width: 768px) {
+  .recipe-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
 
 .each-recipe{
   background-color: white;
@@ -82,7 +90,7 @@ button:hover {
   background-color: #45a049;
 }
 
-button[disabled] {
+button {
   background-color: #ccc;
   cursor: not-allowed;
 }

@@ -32,27 +32,34 @@ export const SavedReceipe = () => {
   
 
     return (
-      <div className="container">
-      <h1>Saved Recipes</h1>
-      <div className="recipe-container">
-         
+      <div className="container-home">
+      <div className="heading">
+        <h1>Saved Recipes</h1>
+      </div>
 
-        
+      <div className="recipe-container">
         {savedrecipes.map((recipe) => (
-          <div className="each-recipe">
-          <div key={recipe._id}>
+          <div className="each-recipe" key={recipe._id}>
             <div>
               <h2>{recipe.name}</h2>
-              
+            
             </div>
-            <div><p>{recipe.instructions}</p></div>
-            <div><img  className="recipe-image" src={recipe.imageUrl} alt={recipe.name} /></div>
-            <div><p>Cooking Time: {recipe.cookingTime}</p></div>
+            <div>
+              <p>{recipe.instructions}</p>
+            </div>
+            <div>
+              <img
+                className="recipe-image"
+                src={recipe.imageUrl}
+                alt={recipe.name}
+              />
+            </div>
+            <div>
+              <p>Cooking Time: {recipe.cookingTime}</p>
+            </div>
           </div>
-          </div>
-          
         ))}
-        </div>
+      </div>
     </div>
   );
 }
